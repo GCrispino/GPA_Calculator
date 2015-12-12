@@ -12,3 +12,9 @@ h1{
 	margin: auto;
 	width: 20em;
 }
+
+#buttons{
+	margin: auto;
+	margin-top: 20px;
+	width: 195px;
+}
