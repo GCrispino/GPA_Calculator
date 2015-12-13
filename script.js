@@ -1,3 +1,5 @@
+var nClasses = 5;
+
 function getGPA() {
 	var classes = document.getElementsByClassName('classes');
 	var total = 0,totalCredits = 0,sumGrades = 0;
@@ -46,5 +48,31 @@ function calculateGPA(){
 }
 
 function addNewClass(){
-	console.log("inside add new class");
+	var newClass = document.createElement('div');
+	var container = document.getElementById('container');
+
+	nClasses += 1;
+
+	newClass.classList.add('classes');
+	newClass.innerHTML = "Class " + nClasses + ": \n";
+	newClass.innerHTML += 'Grade: <select> '
+								+ '<option value="-1" selected="selected"></option>'
+								+ '<option value="4">A</option>'
+								+ '<option value="3">B</option>'
+								+ '<option value="2">C</option>'
+								+ '<option value="1">D</option>'
+								+ '<option value="0">F</option>'
+							+ '</select>';
+	newClass.innerHTML += '<select>'
+							+ '<option value="-1" selected="selected"></option>'
+							+ '<option value="1">1</option>'
+							+ '<option value="2">2</option>'
+							+ '<option value="3">3</option>'
+							+ '<option value="4">4</option>'
+							+ '<option value="5">5</option>'
+							+ '<option value="6">6</option>'
+							+ '<option value="7">7</option>'
+						   	+ '</select>';
+
+	container.appendChild(newClass);
 }
