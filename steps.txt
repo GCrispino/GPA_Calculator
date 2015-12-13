@@ -1,0 +1,8 @@
+steps
+	animate gpa showing
+
+	style page:
+		background image
+		font styles
+		gpa showing
+		put github icon at the bottom
