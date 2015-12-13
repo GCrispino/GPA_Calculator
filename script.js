@@ -44,3 +44,7 @@ function calculateGPA(){
 	}
 
 }
+
+function addNewClass(){
+	console.log("inside add new class");
+}

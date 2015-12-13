@@ -5,20 +5,33 @@ body{
 h1{
 	text-align: center;
 	margin-bottom: 2em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
 }
 
 .classes{
 	margin: auto;
-	margin-bottom: 2em;
-	font-size: 20px;
+	margin-bottom: 2.5em;
+	font-size: 17px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #container{
 	margin: auto;
-	margin-top: 3em;
+	margin-top: 1em;
 	background-color: #FFF;
 	width: 25em;
 	padding: 0.5em 1.5em 3em 1.5em;
+	border: 8px solid black;
+	border-radius: 10px;
+}
+
+#classContainer{
+	width: 22.4em;
+	margin: auto;
 }
 
 #buttons{
@@ -41,6 +54,22 @@ h1{
 #GPA_show p{
 	text-align: center;
 	font-family: "Trebuchet MS";
+}
+
+#GitHubLink{
+	display: block;
+	margin: auto;
+	height: 4em;
+	width: 4em;
+	color: black;
+	text-align: center;
+	margin-top: 2em;
+	outline: 0;
+}
+
+#GitHubLink:hover{
+	/*color: #303030;*/
+	opacity: 0.7;
 }
 
 @keyframes fadeIn{

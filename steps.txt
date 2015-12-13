@@ -1,5 +1,6 @@
 steps
 	animate gpa showing
+	add new class functionality
 
 	style page:
 		background image

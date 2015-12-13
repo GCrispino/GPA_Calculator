@@ -4,138 +4,144 @@
 	<title>GPA Calculator</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
 	<div id="container">
 		<h1>GPA Calculator</h1>
-		
-		<div class="classes">
-			Class 1:
-			Grade:
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="4">A</option>
-				<option value="3">B</option>
-				<option value="2">C</option>
-				<option value="1">D</option>
-				<option value="0">F</option>
-			</select>
-			Number of credits: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-			</select>
-		</div>
 
-		<div class="classes">
-			Class 2:
-			Grade:  
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="4">A</option>
-				<option value="3">B</option>
-				<option value="2">C</option>
-				<option value="1">D</option>
-				<option value="0">F</option>
-			</select>
-			Number of credits: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-			</select>
-		</div>
+		<div id="classContainer">
+			<div class="classes">
+				Class 1: 
+				Grade:
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				Number of credits: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>
 
-		<div class="classes">
-			Class 3: 
-			Grade: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="4">A</option>
-				<option value="3">B</option>
-				<option value="2">C</option>
-				<option value="1">D</option>
-				<option value="0">F</option>
-			</select>
-			Number of credits: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-			</select>
-		</div>
+			<div class="classes">
+				Class 2: 
+				Grade:  
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				Number of credits: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>
 
-		<div class="classes">
-			Class 4: 
-			Grade: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="4">A</option>
-				<option value="3">B</option>
-				<option value="2">C</option>
-				<option value="1">D</option>
-				<option value="0">F</option>
-			</select>
-			Number of credits: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-			</select>
-		</div>
+			<div class="classes">
+				Class 3: 
+				Grade: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				Number of credits: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>
 
-		<div class="classes">
-			Class 5: 
-			Grade: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="4">A</option>
-				<option value="3">B</option>
-				<option value="2">C</option>
-				<option value="1">D</option>
-				<option value="0">F</option>
-			</select>
-			Number of credits: 
-			<select>
-				<option value="-1" selected="selected"></option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-			</select>
+			<div class="classes">
+				Class 4:  
+				Grade: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				Number of credits: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>
+
+			<div class="classes">
+				Class 5:  
+				Grade: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				Number of credits: 
+				<select>
+					<option value="-1" selected="selected"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+			</div>
 		</div>
 
 		<div id="buttons">
-			<button id="add">Add New Class</button>
+			<button id="add" onclick="javascript:addNewClass()">Add New Class</button>
 			<button id="calculate" onclick="javascript:calculateGPA()">Calculate!</button>
 		</div>
 	</div>
+
+	<a id="GitHubLink" href="https://github.com/GCrispino/GPA_Calculator" target="_blank" title="Fork us on GitHub!"><i class="fa fa-github fa-4x"></i></a>
 
 </body>
 </html>
