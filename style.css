@@ -36,8 +36,6 @@ a{
 #classContainer{
 	width: 22.4em;
 	margin: auto;
-	/*animation-name: fadeIn;*/
-	/*animation-duration: .7s;*/
 }
 
 #buttons{
@@ -57,6 +55,7 @@ a{
 	border-radius: 40%;
 	animation-name: fadeInGPA;
 	animation-duration: .7s;
+	transition: background-color .5s;
 }
 
 #GPA_show p{

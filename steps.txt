@@ -1,5 +1,0 @@
-steps
-	remove comments
-	style page:
-		gpa showing
-		style gpa font(or background-color) according to gpa

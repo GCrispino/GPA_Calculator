@@ -25,6 +25,32 @@ function getGPA() {
 	return total;
 }
 
+function changeGPAColor(GPA_show,GPA){
+	var color;
+
+	if (GPA >= 0 && GPA <= 1)
+		//red
+		color = '#D00000';
+	else if(GPA > 1 && GPA <= 2){
+		//orange
+		color = '#FF6600';
+	}
+	else if(GPA > 2 && GPA < 3){
+		//yellow
+		color = '#FFFF00';
+	}
+	else if (GPA >= 3 && GPA < 3.5){
+		//green
+		color = '#00CC33';
+	}
+	else{
+		//greener!
+		color = '#00FF33';
+	}
+
+	GPA_show.style.backgroundColor = color;
+}
+
 function calculateGPA(){
 	var GPA = getGPA();
 	var GPA_show;
@@ -35,6 +61,7 @@ function calculateGPA(){
 	if (GPA_show){
 		GPA_show_text = GPA_show.childNodes[0];
 		GPA_show_text.innerHTML = "Your GPA is " + GPA;
+		changeGPAColor(GPA_show,GPA);
 	}
 	else{
 		var buttons = document.getElementById('buttons');
@@ -43,6 +70,7 @@ function calculateGPA(){
 		GPA_show_text = document.createElement('p');
 		GPA_show_text.innerHTML = "Your GPA is " + GPA;
 		GPA_show.id = 'GPA_show';
+		changeGPAColor(GPA_show,GPA);
 		container.removeChild(buttons);
 		GPA_show.appendChild(GPA_show_text);
 		container.appendChild(GPA_show);
