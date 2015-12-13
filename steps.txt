@@ -1,9 +1,5 @@
 steps
-	animate gpa showing
-	add new class functionality
-
+	remove comments
 	style page:
-		background image
-		font styles
 		gpa showing
-		put github icon at the bottom
+		style gpa font(or background-color) according to gpa

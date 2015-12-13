@@ -37,12 +37,17 @@ function calculateGPA(){
 		GPA_show_text.innerHTML = "Your GPA is " + GPA;
 	}
 	else{
+		var buttons = document.getElementById('buttons');
+
 		GPA_show = document.createElement('div');
 		GPA_show_text = document.createElement('p');
 		GPA_show_text.innerHTML = "Your GPA is " + GPA;
 		GPA_show.id = 'GPA_show';
+		container.removeChild(buttons);
 		GPA_show.appendChild(GPA_show_text);
 		container.appendChild(GPA_show);
+		container.appendChild(buttons);
+		container.style.height = container.offsetHeight + GPA_show.offsetHeight + parseInt(window.getComputedStyle(buttons).marginBottom) + "px";
 	}
 
 }
@@ -50,6 +55,8 @@ function calculateGPA(){
 function addNewClass(){
 	var newClass = document.createElement('div');
 	var container = document.getElementById('container');
+	var classContainer = document.getElementById('classContainer');
+	var buttons = document.getElementById('buttons');
 
 	nClasses += 1;
 
@@ -63,7 +70,7 @@ function addNewClass(){
 								+ '<option value="1">D</option>'
 								+ '<option value="0">F</option>'
 							+ '</select>';
-	newClass.innerHTML += '<select>'
+	newClass.innerHTML += ' Number of credits: <select>'
 							+ '<option value="-1" selected="selected"></option>'
 							+ '<option value="1">1</option>'
 							+ '<option value="2">2</option>'
@@ -74,5 +81,8 @@ function addNewClass(){
 							+ '<option value="7">7</option>'
 						   	+ '</select>';
 
-	container.appendChild(newClass);
+    container.style.height = container.offsetHeight + newClass.offsetHeight + "px";
+	container.removeChild(buttons);
+	classContainer.appendChild(newClass);
+	container.appendChild(buttons);
 }
